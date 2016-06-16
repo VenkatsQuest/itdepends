@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{22987963-DA6C-44E1-8FEC-E031652E092C}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FEALib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Linear\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Linear\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Linear\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)Linear\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Assembly.h" />
+    <ClInclude Include="Elements\ElementDefinition.h" />
+    <ClInclude Include="Elements\ElementHandler.h" />
+    <ClInclude Include="Elements\ElementHex.h" />
+    <ClInclude Include="Elements\ElementHex20.h" />
+    <ClInclude Include="Elements\ElementHex8.h" />
+    <ClInclude Include="Elements\ElementLin.h" />
+    <ClInclude Include="Elements\ElementLin2.h" />
+    <ClInclude Include="Elements\ElementLin3.h" />
+    <ClInclude Include="Elements\ElementPyr.h" />
+    <ClInclude Include="Elements\ElementPyr13.h" />
+    <ClInclude Include="Elements\ElementPyr5.h" />
+    <ClInclude Include="Elements\ElementQud.h" />
+    <ClInclude Include="Elements\ElementQud4.h" />
+    <ClInclude Include="Elements\ElementQud8.h" />
+    <ClInclude Include="Elements\ElementTet.h" />
+    <ClInclude Include="Elements\ElementTet10.h" />
+    <ClInclude Include="Elements\ElementTet4.h" />
+    <ClInclude Include="Elements\ElementTri.h" />
+    <ClInclude Include="Elements\ElementTri3.h" />
+    <ClInclude Include="Elements\ElementTri6.h" />
+    <ClInclude Include="Elements\ElementWed.h" />
+    <ClInclude Include="Elements\ElementWed15.h" />
+    <ClInclude Include="Elements\ElementWed6.h" />
+    <ClInclude Include="Elements\IntegrationRule.h" />
+    <ClInclude Include="Equations\Base.h" />
+    <ClInclude Include="Equations\Laplace.h" />
+    <ClInclude Include="Equations\LaplaceBoundary.h" />
+    <ClInclude Include="Equations\Surface.h" />
+    <ClInclude Include="Equations\Volume.h" />
+    <ClInclude Include="Fields\Coordinates.h" />
+    <ClInclude Include="Fields\FieldBase.h" />
+    <ClInclude Include="Fields\FieldConstant.h" />
+    <ClInclude Include="Fields\FieldElemental.h" />
+    <ClInclude Include="Fields\FieldHandler.h" />
+    <ClInclude Include="Fields\FieldNodal.h" />
+    <ClInclude Include="Fields\FieldNodesElements.h" />
+    <ClInclude Include="Fields\FieldOffsetThenScale.h" />
+    <ClInclude Include="Fields\FieldVarying.h" />
+    <ClInclude Include="Fields\Labels.h" />
+    <ClInclude Include="FileIO\FileIO.h" />
+    <ClInclude Include="FileIO\ReadAbaqusInp.h" />
+    <ClInclude Include="FileIO\ReadVtk.h" />
+    <ClInclude Include="FileIO\WriteAbaqusInp.h" />
+    <ClInclude Include="FileIO\WriteVtk.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="SetOfElements.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="Solver.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Surface.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Assembly.cpp" />
+    <ClCompile Include="Elements\ElementHandler.cpp" />
+    <ClCompile Include="Elements\ElementHex.cpp" />
+    <ClCompile Include="Elements\ElementHex20.cpp" />
+    <ClCompile Include="Elements\ElementHex8.cpp" />
+    <ClCompile Include="Elements\ElementLin.cpp" />
+    <ClCompile Include="Elements\ElementLin2.cpp" />
+    <ClCompile Include="Elements\ElementLin3.cpp" />
+    <ClCompile Include="Elements\ElementPyr.cpp" />
+    <ClCompile Include="Elements\ElementPyr13.cpp" />
+    <ClCompile Include="Elements\ElementPyr5.cpp" />
+    <ClCompile Include="Elements\ElementQud.cpp" />
+    <ClCompile Include="Elements\ElementQud4.cpp" />
+    <ClCompile Include="Elements\ElementQud8.cpp" />
+    <ClCompile Include="Elements\ElementTet.cpp" />
+    <ClCompile Include="Elements\ElementTet10.cpp" />
+    <ClCompile Include="Elements\ElementTet4.cpp" />
+    <ClCompile Include="Elements\ElementTri.cpp" />
+    <ClCompile Include="Elements\ElementTri3.cpp" />
+    <ClCompile Include="Elements\ElementTri6.cpp" />
+    <ClCompile Include="Elements\ElementWed.cpp" />
+    <ClCompile Include="Elements\ElementWed15.cpp" />
+    <ClCompile Include="Elements\ElementWed6.cpp" />
+    <ClCompile Include="Elements\IntegrationRule.cpp" />
+    <ClCompile Include="Equations\Laplace.cpp" />
+    <ClCompile Include="Equations\LaplaceBoundary.cpp" />
+    <ClCompile Include="Fields\Coordinates.cpp" />
+    <ClCompile Include="Fields\FieldElemental.cpp" />
+    <ClCompile Include="Fields\FieldHandler.cpp" />
+    <ClCompile Include="Fields\FieldNodal.cpp" />
+    <ClCompile Include="Fields\FieldNodesElements.cpp" />
+    <ClCompile Include="Fields\FieldVarying.cpp" />
+    <ClCompile Include="Fields\Labels.cpp" />
+    <ClCompile Include="FileIO\ReadAbaqusInp.cpp" />
+    <ClCompile Include="FileIO\ReadVtk.cpp" />
+    <ClCompile Include="FileIO\WriteAbaqusInp.cpp" />
+    <ClCompile Include="FileIO\WriteVtk.cpp" />
+    <ClCompile Include="Mesh.cpp" />
+    <ClCompile Include="SetOfElements.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="Solver.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="Surface.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

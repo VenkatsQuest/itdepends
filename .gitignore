@@ -1,0 +1,14 @@
+*.pyc
+/Examples/Before/Dot/architecture*.*
+/Examples/Before/doxygen
+/Examples/Before/doxygen_warn.txt
+/Examples/After/Dot/architecture*.*
+/Examples/After/doxygen
+/Examples/After/doxygen_warn.txt
+/Examples/Python/Dot/architecture*.*
+/Examples/Python/doxygen
+/Examples/Python/doxygen_warn.txt
+/Examples/Linux/Dot/architecture*.*
+/Examples/Linux/doxygen
+/Examples/Linux/doxygen_warn.txt
+/Examples/Linux/linux-master

@@ -1,0 +1,7 @@
+[
+{"plugin":"language", "method":"Factory", "args":{"language":"cpp", "store":"language", "verbose":true}},
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"maken", "method":"Parse", "args":{"language":"language", "direc":"linux-master", "input":"makeout", "dependencies":"dependencies"}},
+{"plugin":"missing", "method":"Remove", "args":{"dependencies":"dependencies", "input":"missing", "environment":"environment"}},
+{"plugin":"dependencies", "method":"Export", "args":{"dependencies":"dependencies", "output":"master.json"}}
+]

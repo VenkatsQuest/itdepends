@@ -1,0 +1,7 @@
+[
+{"plugin":"language", "method":"Factory", "args":{"language":"cpp", "store":"language", "verbose":true}},
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"visualstudio", "method":"Parse", "args":{"input":"Source\\FEA.sln", "dependencies":"dependencies"}},
+{"plugin":"dependencies", "method":"Assemble", "args":{"dependencies":"dependencies"}},
+{"plugin":"track", "method":"Report", "args":{"dependencies":"dependencies", "output":"complexity.txt"}}
+]

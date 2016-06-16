@@ -1,0 +1,7 @@
+$(srctree)/arch/$(hdr-arch)/include
+$(srctree)/arch/$(hdr-arch)/include/uapi
+$(srctree)/arch/$(hdr-arch)/include/generated/uapi
+$(srctree)/arch/$(hdr-arch)/include/generated
+$(srctree)/include
+$(srctree)/include/uapi
+$(srctree)/include/generated/uapi

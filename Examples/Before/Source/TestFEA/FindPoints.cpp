@@ -1,0 +1,11 @@
+#include "stdafx.h"
+#include "CppUnitTest.h"
+#include "Mesh.h"
+#include "Fields/FieldHandler.h"
+#include "Fields/FieldNodal.h"
+#include "TestClasses/BoxMesh.h"
+#include "TestClasses/DiffFiles.h"
+#include "TestClasses/NodeFinder.h"
+#include "TestUtils/LogStream.h"
+#include <iostream>
+#include <memory>

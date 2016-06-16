@@ -1,0 +1,6 @@
+[
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"dependencies", "method":"Import", "args":{"dependencies":"dependencies", "input":"master.json"}},
+{"plugin":"dependencies", "method":"Assemble", "args":{"dependencies":"dependencies"}},
+{"plugin":"dependencies", "method":"Export", "args":{"dependencies":"dependencies", "output":"import.json"}}
+]

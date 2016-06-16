@@ -1,0 +1,9 @@
+#include "stdafx.h"
+#include "CppUnitTest.h"
+#include "SetOfElements.h"
+#include "Fields/Coordinates.h"
+#include "Fields/FieldHandler.h"
+#include "TestClasses/LocalNodes.h"
+#include "TestUtils/LogStream.h"
+#include <iostream>
+#include <memory>

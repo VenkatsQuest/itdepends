@@ -1,0 +1,7 @@
+[
+{"plugin":"language", "method":"Factory", "args":{"language":"python", "store":"language", "verbose":true}},
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"generic", "method":"Parse", "args":{"language":"language", "input":"..\\..\\Source", "environment":"environment", "paths":"includes", "filters":"filters", "dependencies":"dependencies"}},
+{"plugin":"dependencies", "method":"Assemble", "args":{"dependencies":"dependencies"}},
+{"plugin":"doxygen", "method":"Report", "args":{"language":"language", "dependencies":"dependencies", "output":"Dot", "matrix":true, "linkToLeaves":true}}
+]

@@ -1,0 +1,2 @@
+$(srctree) linux-master
+$(hdr-arch) arm

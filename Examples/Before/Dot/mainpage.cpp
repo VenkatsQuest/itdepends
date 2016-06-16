@@ -1,0 +1,4 @@
+/** 
+\mainpage Arch
+\ref Architecture
+*/

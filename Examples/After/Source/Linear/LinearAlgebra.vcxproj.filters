@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Linear">
+      <UniqueIdentifier>{6ff47380-6fef-43eb-b22f-8814bbcb6762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Linear\Algebra">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Linear\Solvers">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Linear\FileIO">
+      <UniqueIdentifier>{38711413-e085-4b44-afed-551cc0186832}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Algebra\Diagonal.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Full.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Mapped.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Matrix.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Normal.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\Vector.h">
+      <Filter>Linear\Algebra</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ALSQR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\BasisRange.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ConjugateGradient.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ConjugateGradientNE.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ConjugateGradientNR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ConjugateResidual.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\CRAIG.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\IRLSQR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\LSMR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\LSQR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\LU.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\MatrixSolver.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\MinimalResidual.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\MINRES.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\MINRESQLP.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\PCG.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\PCGInitialiser.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\PCGNE.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\PCGNR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\QMR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ResidualNormSteepestDescent.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\ResidualRange.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\SteepestDescent.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\TFQMR.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\TruncatedResidualRange.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Solvers\BiCGSTAB.h">
+      <Filter>Linear\Solvers</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\ReadMatrix.h">
+      <Filter>Linear\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Algebra\WriteMatrix.h">
+      <Filter>Linear\FileIO</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Solvers\ALSQR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\CRAIG.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\IRLSQR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\LSMR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\LSQR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\LU.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\MINRES.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\MINRESQLP.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\PCG.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\PCGInitialiser.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\QMR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\TFQMR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\MatrixSolver.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\SteepestDescent.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\MinimalResidual.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ResidualNormSteepestDescent.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ConjugateGradient.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ConjugateResidual.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ConjugateGradientNR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ConjugateGradientNE.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\PCGNR.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\PCGNE.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\BasisRange.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\ResidualRange.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\Diagonal.cpp">
+      <Filter>Linear\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\Full.cpp">
+      <Filter>Linear\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\Mapped.cpp">
+      <Filter>Linear\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\Matrix.cpp">
+      <Filter>Linear\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\Normal.cpp">
+      <Filter>Linear\Algebra</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\TruncatedResidualRange.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Solvers\BiCGSTAB.cpp">
+      <Filter>Linear\Solvers</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\ReadMatrix.cpp">
+      <Filter>Linear\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Algebra\WriteMatrix.cpp">
+      <Filter>Linear\FileIO</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

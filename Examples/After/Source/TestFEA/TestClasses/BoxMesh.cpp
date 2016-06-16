@@ -1,0 +1,7 @@
+#include "stdafx.h"
+#include "Mesh.h"
+#include "SetOfElements.h"
+#include "Fields/Coordinates.h"
+#include "Elements/ElementHandler.h"
+#include "BoxMesh.h"
+#include "TransMesh.h"

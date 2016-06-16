@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="FEA">
+      <UniqueIdentifier>{6c35d76e-efa4-4fd2-9b92-465c7425f258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Solver">
+      <UniqueIdentifier>{25da59f0-2392-41c0-a1fd-2decedb2ed56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Surface">
+      <UniqueIdentifier>{5d209823-4b45-4616-9ff7-4aa99bec06b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Mesh">
+      <UniqueIdentifier>{932a903b-c0e8-4e35-82a7-6839efd35c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\FileIO">
+      <UniqueIdentifier>{3d246194-83ea-4c72-bc14-0ae759a3469b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Equations">
+      <UniqueIdentifier>{5a2a6d2c-deee-4288-b0f8-29d5b40b8d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Core">
+      <UniqueIdentifier>{0a6a5670-936b-4db5-8027-d4b7edff67a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Core\Elements">
+      <UniqueIdentifier>{89f0cbd9-8286-468f-9cb7-ab6b1bbc337c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Core\Fields">
+      <UniqueIdentifier>{95c7a535-594e-49a7-b5ae-3b9733df8ff0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Core\SetOfElements">
+      <UniqueIdentifier>{47247b84-87dc-4045-833d-628cd0273162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FEA\Assembly">
+      <UniqueIdentifier>{a30c4c58-9bbd-45c2-916d-47a91540dccc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementHandler.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementHex.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementHex8.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementHex20.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementLin.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementLin2.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementLin3.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementPyr.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementPyr5.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementPyr13.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementQud.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementQud4.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementQud8.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTet.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTet4.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTet10.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTri.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTri3.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementTri6.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementWed.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementWed6.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementWed15.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\IntegrationRule.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Equations\LaplaceBoundary.h">
+      <Filter>FEA\Equations</Filter>
+    </ClInclude>
+    <ClInclude Include="Equations\Surface.h">
+      <Filter>FEA\Equations</Filter>
+    </ClInclude>
+    <ClInclude Include="Equations\Volume.h">
+      <Filter>FEA\Equations</Filter>
+    </ClInclude>
+    <ClInclude Include="Equations\Base.h">
+      <Filter>FEA\Equations</Filter>
+    </ClInclude>
+    <ClInclude Include="Equations\Laplace.h">
+      <Filter>FEA\Equations</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO\WriteAbaqusInp.h">
+      <Filter>FEA\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO\WriteVtk.h">
+      <Filter>FEA\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO\ReadAbaqusInp.h">
+      <Filter>FEA\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO\ReadVtk.h">
+      <Filter>FEA\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO\FileIO.h">
+      <Filter>FEA\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\Coordinates.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldBase.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldConstant.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldNodal.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\Labels.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Elements\ElementDefinition.h">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldOffsetThenScale.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldElemental.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldVarying.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldNodesElements.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="Fields\FieldHandler.h">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClInclude>
+    <ClInclude Include="SetOfElements.h">
+      <Filter>FEA\Core\SetOfElements</Filter>
+    </ClInclude>
+    <ClInclude Include="Surface.h">
+      <Filter>FEA\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>FEA\Surface</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>FEA\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Assembly.h">
+      <Filter>FEA\Assembly</Filter>
+    </ClInclude>
+    <ClInclude Include="Solver.h">
+      <Filter>FEA\Solver</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementHandler.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementHex.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementHex8.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementHex20.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementLin.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementLin2.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementLin3.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementPyr.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementPyr5.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementPyr13.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementQud.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementQud4.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementQud8.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTet.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTet4.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTet10.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTri.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTri3.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementTri6.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementWed.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementWed6.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\ElementWed15.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Elements\IntegrationRule.cpp">
+      <Filter>FEA\Core\Elements</Filter>
+    </ClCompile>
+    <ClCompile Include="Equations\LaplaceBoundary.cpp">
+      <Filter>FEA\Equations</Filter>
+    </ClCompile>
+    <ClCompile Include="Equations\Laplace.cpp">
+      <Filter>FEA\Equations</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO\WriteVtk.cpp">
+      <Filter>FEA\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO\ReadAbaqusInp.cpp">
+      <Filter>FEA\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO\WriteAbaqusInp.cpp">
+      <Filter>FEA\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="FileIO\ReadVtk.cpp">
+      <Filter>FEA\FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\Coordinates.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\Labels.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\FieldNodal.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\FieldElemental.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\FieldVarying.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\FieldNodesElements.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="Fields\FieldHandler.cpp">
+      <Filter>FEA\Core\Fields</Filter>
+    </ClCompile>
+    <ClCompile Include="SetOfElements.cpp">
+      <Filter>FEA\Core\SetOfElements</Filter>
+    </ClCompile>
+    <ClCompile Include="Surface.cpp">
+      <Filter>FEA\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>FEA\Surface</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>FEA\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Assembly.cpp">
+      <Filter>FEA\Assembly</Filter>
+    </ClCompile>
+    <ClCompile Include="Solver.cpp">
+      <Filter>FEA\Solver</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

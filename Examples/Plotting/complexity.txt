@@ -1,0 +1,20 @@
+# The time is the number of seconds since some arbitrary start date.
+# The quantity that we calculate the maximum and sum of is (E + P - N).
+# This has a value of zero for strictly layered architectures
+# otherwise it is positive.
+# Also track the normalised value (E + P - N) / N.
+# Time            Max        Sum        Max        Sum
+1462795415         21         47       1.12       3.40
+1463159406         14         39       1.00       3.05 # Change filters
+1463172640         14         37       0.75       2.75 # Refactor
+1463174116         14         37       0.75       2.75 # Refactor
+1463246157         14         36       0.75       2.55 # Refactor
+1463252519         14         37       0.75       2.75 # Split shape from integration rule
+1463252994         14         37       0.75       2.75 # Refactor
+1463253737         15         38       0.88       2.68 # Change filters / Remove unnecessary include 
+1463388386         15         35       0.88       2.48 # Remove unnecessary include
+1463395181         15         34       0.67       2.61 # Change filters
+1464110968          4         16       0.67       2.02 # Extract the element factory
+1464112513          4         13       0.67       1.96 # Remove unnecessary include
+1464113248          4         12       0.67       1.80 # Remove unnecessary include
+1464114349          4         11       0.67       1.71 # Remove unnecessary include
