@@ -22,8 +22,8 @@ from language import Language
 class Python(Language):
 	extensions = ['.py', '.pyw']
 	
-	def __init__(self, verbose, log):
-		Language.__init__(self, verbose, log)
+	def __init__(self, encoding, substitutions, verbose, log):
+		Language.__init__(self, encoding, substitutions, verbose, log)
 		
 	def CanRead(self, filename):
 		readable = (1 == Python.extensions.count(os.path.splitext(filename)[1]))
@@ -33,7 +33,9 @@ class Python(Language):
 		
 	def ReadFile(self, filename, paths):
 		items = []
-		for line in open(filename):
+		for line in open(filename, encoding=self.encoding):
+			for key in self.substitutions:
+				line = line.replace(key, self.substitutions[key])
 			bits = line.split()
 			if len(bits) == 0:
 				continue
@@ -55,9 +57,10 @@ class Python(Language):
 					break
 			if found != None:
 				files.append(found)
-			elif self.verbose:
-				self.log.write("Cannot find %s from %s\n" % (item, filename))
+			else:
 				missing.append(line)
+				if self.verbose:
+					self.log.write("Cannot find %s from %s\n" % (item, filename))
 		return files, missing
 		
 	def FileExtensions(self):
@@ -71,5 +74,5 @@ class Python(Language):
 		for line in lines.split('\n'):
 			fp.write("## %s\n" % line)
 
-def Factory(verbose, log):
-	return Python(verbose, log)
+def Factory(encoding, substitutions, verbose, log):
+	return Python(encoding, substitutions, verbose, log)

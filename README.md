@@ -40,3 +40,4 @@ The Examples directory contains
 * Plotting - the metrics example from [CodeProject](http://www.codeproject.com/Articles/1098935/As-Is-Software-Architecture)
 * Python - generation of Doxygen docs from this projects source
 * Linux - generation of Doxygen docs from the Linux kernel 4.6 source
+* Boost - generation of Doxygen docs from the Boost 1.61 source

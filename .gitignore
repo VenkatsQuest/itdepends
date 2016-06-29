@@ -12,3 +12,6 @@
 /Examples/Linux/doxygen
 /Examples/Linux/doxygen_warn.txt
 /Examples/Linux/linux-master
+/Examples/Boost/Dot/architecture*.*
+/Examples/Boost/doxygen
+/Examples/Boost/doxygen_warn.txt

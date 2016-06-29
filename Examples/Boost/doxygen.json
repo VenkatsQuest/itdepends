@@ -1,0 +1,7 @@
+[
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"dependencies", "method":"Import", "args":{"dependencies":"dependencies", "input":"boost.json", "filters":"filters"}},
+{"plugin":"dependencies", "method":"Assemble", "args":{"dependencies":"dependencies"}},
+{"plugin":"language", "method":"Factory", "args":{"language":"cpp", "store":"language", "verbose":true}},
+{"plugin":"doxygen", "method":"Report", "args":{"language":"language", "dependencies":"dependencies", "output":"Dot", "linkToLeaves":false}}
+]

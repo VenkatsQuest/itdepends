@@ -1,0 +1,7 @@
+[
+{"plugin":"language", "method":"Factory", "args":{"language":"cpp", "encoding":"latin-1", "substitutions":"substitutions", "store":"language", "verbose":false}},
+{"plugin":"dependencies", "method":"Factory", "args":{"store":"dependencies"}},
+{"plugin":"generic", "method":"Parse", "args":{"language":"language", "input":"..\\..\\..\\..\\boost_1_61_0\\boost", "paths":"includes", "filters":"filters", "dependencies":"dependencies"}},
+{"plugin":"missing", "method":"Remove", "args":{"dependencies":"dependencies", "input":"missing"}},
+{"plugin":"dependencies", "method":"Export", "args":{"dependencies":"dependencies", "output":"boost.json"}}
+]

@@ -17,9 +17,13 @@
 #  integral or modified, of the source files. The removal of the reference to
 #  the license will be considered an infringement of the license itself.
 import os.path
+from utilities import Default
+from readtext import ReadKeyValue
 
 class Language:
-	def __init__(self, verbose, log):
+	def __init__(self, encoding, substitutions, verbose, log):
+		self.encoding = encoding
+		self.substitutions = substitutions
 		self.verbose = verbose
 		self.log = log
 		
@@ -50,13 +54,25 @@ def Factory(state, args, log):
   Arguments:
     language:
       name of the language
+    encoding:
+      the encoding of any source files
+      default is utf-8
+    substitutions:
+      a key-value pair file mapping from one source 
+      default is no substitutions file
     verbose:
       whether to print warnings
     store:
       name to store the object in"""
 	module = __import__(args["language"])
 	method = getattr(module, "Factory")
-	state[args["store"]] = method(args["verbose"], log)
+	encoding = Default(args, "encoding", "utf-8")
+	
+	substitutions = {}
+	if Default(args, "substitutions", "") != "":
+		substitutions = ReadKeyValue(args["substitutions"], {})
+	
+	state[args["store"]] = method(encoding, substitutions, args["verbose"], log)
 
 def Methods():
 	return [Factory, ]

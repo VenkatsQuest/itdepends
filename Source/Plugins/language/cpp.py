@@ -20,10 +20,10 @@ import os.path
 from language import Language
 
 class Cpp(Language):
-	extensions = ['.c', '.cpp', '.cxx', '.h', '.hpp', '.hxx', '.S']
+	extensions = ['.c', '.cpp', '.cxx', '.h', '.hpp', '.hxx', '.S', '.ipp']
 	
-	def __init__(self, verbose, log):
-		Language.__init__(self, verbose, log)
+	def __init__(self, encoding, substitutions, verbose, log):
+		Language.__init__(self, encoding, substitutions, verbose, log)
 		
 	def CanRead(self, filename):
 		readable = (1 == Cpp.extensions.count(os.path.splitext(filename)[1]))
@@ -34,8 +34,10 @@ class Cpp(Language):
 	def ReadFile(self, filename, paths):
 		files = []
 		missing = []
-		for line in open(filename, encoding='utf-8'):
+		for line in open(filename, encoding=self.encoding):
 			line = line.strip()
+			for key in self.substitutions:
+				line = line.replace(key, self.substitutions[key])
 			if line[:8] != '#include':
 				continue
 			line = line[8:].strip()
@@ -49,9 +51,10 @@ class Cpp(Language):
 			found = self.Search(os.path.split(filename)[0], paths, line)
 			if found != None:
 				files.append(found)
-			elif self.verbose:
-				self.log.write("Cannot find %s from %s\n" % (line, filename))
+			else:
 				missing.append(line)
+				if self.verbose:
+					self.log.write("Cannot find %s from %s\n" % (item, filename))
 		return files, missing
 		
 	def FileExtensions(self):
@@ -65,5 +68,5 @@ class Cpp(Language):
 		for line in lines.split('\n'):
 			fp.write("%s\n" % line)
 
-def Factory(verbose, log):
-	return Cpp(verbose, log)
+def Factory(encoding, substitutions, verbose, log):
+	return Cpp(encoding, substitutions, verbose, log)

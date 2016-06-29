@@ -1,0 +1,16 @@
+BOOST_ABI_PREFIX "boost/config/abi/msvc_prefix.hpp"
+BOOST_ABI_SUFFIX "boost/config/abi/msvc_suffix.hpp"
+BOOST_HASH_MAP_HEADER <hash_map>
+BOOST_HASH_SET_HEADER <hash_set>
+BOOST_PHOENIX_ITERATE() <boost/phoenix/support/detail/iterate.hpp>
+BOOST_PP_ASSIGN_SLOT(1) <boost/preprocessor/slot/detail/slot1.hpp>
+BOOST_PP_ASSIGN_SLOT(2) <boost/preprocessor/slot/detail/slot2.hpp>
+BOOST_PP_ITERATE() <boost/preprocessor/iteration/detail/iter/forward1.hpp>
+BOOST_PP_LOCAL_ITERATE() <boost/preprocessor/iteration/detail/local.hpp>
+BOOST_PROTO_LOCAL_ITERATE() <boost/proto/detail/local.hpp>
+BOOST_REGEX_H1 <boost/thread/once.hpp>
+BOOST_REGEX_H2 <boost/thread/recursive_mutex.hpp>
+BOOST_REGEX_H3 <boost/thread/lock_types.hpp>
+BOOST_SIGNAL_FUNCTION_N_HEADER <boost/function/function0.hpp>
+BOOST_SLIST_HEADER <slist>
+BOOST_TYPEOF_INCREMENT_REGISTRATION_GROUP() <boost/typeof/incr_registration_group.hpp>
