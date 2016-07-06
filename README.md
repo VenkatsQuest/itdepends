@@ -41,3 +41,6 @@ The Examples directory contains
 * Python - generation of Doxygen docs from this projects source
 * Linux - generation of Doxygen docs from the Linux kernel 4.6 source
 * Boost - generation of Doxygen docs from the Boost 1.61 source
+
+## Related projects
+* [.NET assembly reader](https://github.com/zebmason/netdepends)
