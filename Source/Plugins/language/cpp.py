@@ -54,7 +54,7 @@ class Cpp(Language):
 			else:
 				missing.append(line)
 				if self.verbose:
-					self.log.write("Cannot find %s from %s\n" % (item, filename))
+					self.log.write("Cannot find %s from %s\n" % (line, filename))
 		return files, missing
 		
 	def FileExtensions(self):
